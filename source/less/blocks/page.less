@@ -12,3 +12,16 @@
   margin: 0;
   padding: 0;
 }
+
+.page__body--index {
+  @media (min-width: @desktop-width) {
+   background-image: url("../img/index_background_desktop.jpg");
+   background-repeat: no-repeat;
+   background-position: right top;
+   background-size: 50% auto;
+
+   @media (min-resolution: 2dppx) {
+    background-image: url("../img/index_background_desktop@2x.jpg");
+   }
+  }
+}
