@@ -1,13 +1,16 @@
 .page-header {
+  @media (max-width: @tablet-width - 1px) {
+    border-bottom: @border-header;
+  }
+
   @media (min-width: @desktop-width) {
     padding-top: 53px;
-    background-image: linear-gradient(to right, transparent 50%,  rgba(104, 183, 56, 0.85) 50%);
+    background-image: linear-gradient(to right, transparent 50%, @green-background 50%);
   }
 }
 
 .page-header__nav {
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     margin: 0 auto;
   }
 }
-

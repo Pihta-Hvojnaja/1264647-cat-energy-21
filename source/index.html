@@ -47,7 +47,31 @@
         </ul>
       </nav>
     </header>
+    <!-- MAIN -->
+    <main class="page-main">
+      <section class="promo">
+        <div class="promo__wrapper">
+          <div class="promo__top">
+            <h1 class="promo__title title">Функциональное питание для котов</h1>
+            <p class="promo__slogan">Занялся собой? Займись котом!</p>
+          </div>
 
+          <div class="promo__bottom">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/bank_desktop.webp 1x, img/bank_desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/bank_tablet.webp 1x, img/bank_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/bank_mobile.webp 1x, img/bank_mobile@2x.webp 2x">
+
+              <source media="(min-width: 1440px)" srcset="img/bank_desktop.png 1x, img/bank_desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/bank_tablet.png 1x, img/bank_tablet@2x.png 2x">
+              <img class="promo__img" src="img/bank_mobile.png" srcset="img/bank_mobile.png 1x, img/bank_mobile@2x.png 2x" alt="Оранжевая банка функционального питания для котов Cat Energy">
+            </picture>
+
+            <a class="button promo__button" href="#">ПОДОБРАТЬ ПРОГРАММУ</a>
+          </div>
+        </div>
+      </section>
+    </main>
 
   </body>
 </html>

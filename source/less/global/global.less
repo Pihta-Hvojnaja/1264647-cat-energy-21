@@ -41,6 +41,31 @@ a {
   }
 }
 
+.title {
+  font-family: @font-family-title;
+  font-weight: 400;
+  font-size: 36px;
+
+  @media (min-width: @tablet-width) {
+    .text(60px; 60px);
+    color: @black;
+  }
+}
+
+.button {
+  font-family: @font-family-title;
+  font-weight: 400;
+  padding: 0;
+  color: @white;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: @green;
+
+  @media (max-width: @tablet-width - 1px) {
+    width: 100%;
+  }
+}
+
 /*
 @media (min-width: @mobile-width) {}
 @media (min-width: @tablet-width) {}
