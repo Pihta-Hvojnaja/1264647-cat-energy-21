@@ -61,6 +61,14 @@ a {
   text-transform: uppercase;
   background-color: @green;
 
+  &:hover {
+    background-color: @green-hover;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+  }
+
   @media (max-width: @tablet-width - 1px) {
     width: 100%;
   }
