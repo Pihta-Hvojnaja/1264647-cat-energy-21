@@ -29,7 +29,7 @@
 
   @media (min-width: @desktop-width) {
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto 82px auto;
     padding: 107px 110px 20px 190px;
     max-width: @desktop-width;
     min-height: 578px;
@@ -117,6 +117,10 @@
   display: block;
   margin: 0 auto 3px auto;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 1px;
+  }
+
   @media (min-width: @desktop-width) {
     position: absolute;
     top: 25px;
@@ -154,6 +158,6 @@
 }
 
 .promo__programs {
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
 }
