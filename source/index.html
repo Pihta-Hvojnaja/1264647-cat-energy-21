@@ -92,7 +92,7 @@
         </ul>
       </section>
 
-      <section class="special">
+      <section class="special ">
         <div class="special__wrapper container">
           <h2 class="special__title title">Как это работает</h2>
 
@@ -132,7 +132,7 @@
       </section>
 
       <section class="example">
-        <div class="example__wrapper container">
+        <div class="example__wrapper">
           <h2 class="example__title title">Живой пример</h2>
 
           <div class="example__top">
@@ -174,13 +174,48 @@
           </div>
 
           <div class="example__bottom">
-            <div class="example__img">
-              <img src="img/cat-fat.png">
+            <div class="slider">
+              <div class="slider__slides">
+                <div class="slider__slide-before">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/cat_fat_tablet.webp 1x, img/cat_fat_tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/cat_fat_tablet.webp 1x, img/cat_fat_tablet@2x.webp 2x">
+
+                    <source media="(min-width: 768px)" srcset="img/cat_fat_tablet.png 1x, img/cat_fat_tablet@2x.png 2x">
+                    <img src="img/cat_fat_mobile.png" srcset="img/cat_fat_mobile.png 1x, img/cat_fat_mobile@2x.png 2x" alt="Толстый черно-пепельный кот, сидящий на попе">
+                  </picture>
+                </div>
+
+                <div class="slider__slide-after">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/cat_slim_tablet.webp 1x, img/cat_slim_tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/cat_slim_tablet.webp 1x, img/cat_slim_tablet@2x.webp 2x">
+
+                    <source media="(min-width: 768px)" srcset="img/cat_slim_tablet.png 1x, img/cat_slim_tablet@2x.png 2x">
+                    <img src="img/cat_slim_mobile.png" srcset="img/cat_slim_mobile.png 1x, img/cat_slim_mobile@2x.png 2x" alt="Тощий черно-пепельный кот, сидящий на попе">
+                  </picture>
+                </div>
+              </div>
+
+              <div class="slider__buttons">
+                <button class="slider__btn slider__btn--before" type="button">
+                  БЫЛО
+                </button>
+
+                <div class="slider__range">
+                  <button class="slider__range-inner" type="button" areal-label="Кнопка ползунка было-стало"></button>
+                </div>
+
+                <button class="slider__btn slider__btn--after" type="button">
+                  СТАЛО
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
 
+    <script src="js/script.min.js"></script>
   </body>
 </html>
