@@ -1,6 +1,33 @@
 const body = document.querySelector('.page__body');
 
+//ГЛАВНАЯ НАВИГАЦИЯ
+if (body.querySelector('.nav')) {
+  const nav = body.querySelector('.nav');
+  const navToggle = nav.querySelector('.nav__toggle');
+
+  nav.classList.add('nav--closed');
+  nav.classList.remove('nav--nojs');
+
+  navToggle.addEventListener('click', function(evt) {
+    evt.preventDefault();
+
+    if (nav.classList.contains('nav--closed')) {
+      nav.classList.remove('nav--closed');
+      nav.classList.add('nav--opened');
+
+      console.log('Привет');
+
+    } else {
+      nav.classList.remove('nav--opened');
+      nav.classList.add('nav--closed');
+    }
+  });
+}
+
+
+//СЛАЙДЕР
 if (body.querySelector('.slider')) {
+
   const slider = body.querySelector('.slider');
 
   const btnBefore = slider.querySelector('.slider__btn--before');
@@ -61,16 +88,7 @@ if (body.querySelector('.slider')) {
   btnEnd = btnRange.getBoundingClientRect().right;
   longBtnRange = btnEnd - btnStart;
 
-  window.addEventListener('resize', function () {
-    widthBody = body.clientWidth;
-    slideBefore.classList.remove('disappear', 'appear');
-
-    if (widthBody < 768) {
-      btnRange.style.left = 0;
-      slideBefore.style.width = 311 + 'px';
-    }
-  });
-
+  //Нажатие кнопки мыши
   btnRange.addEventListener('mousedown', function(evt) {
     evt.preventDefault();
 
@@ -82,11 +100,13 @@ if (body.querySelector('.slider')) {
     isPush = true;
   });
 
+  //Выключение действия, если кнопка мыши отпущена
   body.addEventListener('mouseup', function(evt) {
     evt.preventDefault();
     ispush = false;
   });
 
+  //Движение мыши
   body.addEventListener('mousemove', function(evt) {
     evt.preventDefault();
 
@@ -124,9 +144,15 @@ if (body.querySelector('.slider')) {
       }
     }
   });
+
+  //При изменении ширины экрана кнопка до tablet_width возвращается в исходное положение
+  window.addEventListener('resize', function () {
+    widthBody = body.clientWidth;
+    slideBefore.classList.remove('disappear', 'appear');
+
+    if (widthBody < 768) {
+      btnRange.style.left = 0;
+      slideBefore.style.width = 311 + 'px';
+    }
+  });
 }
-
-
-
-
-

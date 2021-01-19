@@ -70,23 +70,25 @@
     }
   }
 
-  .nav--opened .nav__toggle {
-    &::before,
-    &::after {
-      .pseudo();
-      top: 31px;
-      right: 20px;
-      width: 25px;
-      height: 2px;
-      background-color: @black;
-    }
+  .nav--opened {
+    .nav__toggle {
+      &::before,
+      &::after {
+        .pseudo();
+        top: 31px;
+        right: 20px;
+        width: 25px;
+        height: 2px;
+        background-color: @black;
+      }
 
-    &::before {
-      transform: rotate(45deg);
-    }
+      &::before {
+        transform: rotate(45deg);
+      }
 
-    &::after {
-      transform: rotate(-45deg);
+      &::after {
+        transform: rotate(-45deg);
+      }
     }
   }
 

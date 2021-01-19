@@ -11,7 +11,7 @@
   <body class="page__body page__body--index">
     <!-- HEADER -->
     <header class="page-header">
-      <nav class="nav nav--opened page-header__nav">
+      <nav class="nav nav--nojs page-header__nav">
         <div class="nav__top">
           <a class="nav__logo-link">
             <picture>
@@ -47,6 +47,7 @@
         </ul>
       </nav>
     </header>
+
     <!-- MAIN -->
     <main class="page-main">
       <section class="promo">
@@ -216,6 +217,46 @@
       </section>
     </main>
 
-    <script src="js/script.min.js"></script>
+    <!-- FOOTER -->
+    <footer class="page-footer">
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="hidden">Контакты</h2>
+
+          <p class="contacts__info">
+            <span>Приглашаем</span> к сотрудничеству дилеров!
+          </p>
+
+          <address class="contacts__address">
+            ул. Большая Конюшенная,&nbsp;д. 19/8 <span>Санкт-Петербург</span>
+          </address>
+        </div>
+
+        <div class="contacts__map">
+          <div class="contacts__item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/map_desktop.webp 1x, img/map_desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map_tablet.webp 1x, img/map_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/map_mobile.webp 1x, img/map_mobile@2x.webp 2x">
+
+              <source media="(min-width: 1440px)" srcset="img/map_desktop.jpg 1x, img/map_desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map_tablet.jpg 1x, img/map_tablet@2x.jpg 2x">
+              <img src="img/map_mobile.jpg" loading="lazy" srcset="img/map_mobile.jpg 1x, img/map_mobile@2x.jpg 2x" alt="Магазин Cat Energy по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+            </picture>
+          </div>
+
+          <iframe class="contacts__item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.32085871608954!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1611050344040!5m2!1sru!2sru" loading="lazy"
+            width="320" height="362">
+          </iframe>-->
+        </div>
+      </section>
+
+      <div>
+        <h2>Привет Мир</h2>
+      </div>
+
+    </footer>
+
+    <!--<script src="js/script.min.js"></script>-->
   </body>
 </html>
