@@ -1,0 +1,48 @@
+.copyright {
+  padding-top: 22px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 2px;
+  }
+}
+
+.copyright__link {
+  .flex();
+  justify-content: space-between;
+  align-items: center;
+  max-width: 280px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: @dark-grey-text;
+
+  span {
+    max-width: 80%;
+  }
+
+  &:hover .copyright__svg {
+    fill: @green;
+  }
+
+  &:active span,
+  &:active .copyright__svg {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-end;
+    width: 200px;
+
+    span {
+      max-width: 70%;
+      margin-right: 23px;
+    }
+  }
+}
+
+.copyright__svg {
+  fill: @grey-icons-footer;
+}

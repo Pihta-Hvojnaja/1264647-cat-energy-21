@@ -154,5 +154,15 @@ if (body.querySelector('.slider')) {
       btnRange.style.left = 0;
       slideBefore.style.width = 311 + 'px';
     }
+
+    if (widthBody >= 768 && widthBody < 1440) {
+      btnRange.style.left = 198 + 'px';
+      slideBefore.style.width = 338 + 'px';
+    }
+
+    if (widthBody >= 1440) {
+      btnRange.style.left = 198 + 'px';
+      slideBefore.style.width = 392 + 'px';
+    }
   });
 }

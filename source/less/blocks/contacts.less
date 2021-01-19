@@ -25,6 +25,8 @@
 
   @media (min-width: @tablet-width) {
     justify-content: space-between;
+    max-width: 950px;
+    margin: 0 auto;
     padding: 63px 71px 58px 71px;
   }
 
@@ -90,7 +92,11 @@
 
 .contacts__map {
   position: relative;
-  min-height: 400px;
+  min-height: 362px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 400px;
+  }
 }
 
 .contacts__item {
