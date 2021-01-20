@@ -1,0 +1,81 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  min-width: 320px;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    padding: 0 110px;
+    max-width: @desktop-width;
+  }
+}
+
+.title {
+  font-family: @font-family-title;
+  font-weight: 400;
+  font-size: 36px;
+
+  @media (min-width: @tablet-width) {
+    .text(60px; 60px);
+    color: @black;
+  }
+}
+
+.button {
+  font-family: @font-family-title;
+  font-weight: 400;
+  padding: 0;
+  color: @white;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: @green;
+
+  &:hover {
+    background-color: @green-hover;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+  }
+
+  @media (max-width: @tablet-width - 1px) {
+    width: 100%;
+  }
+}
+
+/*
+@media (min-width: @mobile-width) {}
+@media (min-width: @tablet-width) {}
+@media (min-width: @desktop-width) {}
+*/

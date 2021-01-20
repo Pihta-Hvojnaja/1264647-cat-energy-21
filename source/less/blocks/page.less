@@ -1,0 +1,31 @@
+.page {
+  height: 100%;
+  font-family: @font-family-text;
+  color: @black;
+}
+
+.page__body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.page__body--index {
+  .text(14px; 18px);
+  font-weight: 400;
+
+  @media (min-width: @desktop-width) {
+    background:
+      url("../img/index_background_desktop.jpg") right top/50% auto no-repeat,
+      linear-gradient(to right, transparent 50%, @dark-grey-background-desktop 50%);
+
+    @media (min-resolution: 2dppx) {
+      background:
+        url("../img/index_background_desktop@2x.jpg") right top/50% auto no-repeat,
+        linear-gradient(to right, transparent 50%, @dark-grey-background-desktop 50%);
+    }
+  }
+}

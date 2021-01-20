@@ -1,0 +1,30 @@
+.text(@size; @height) {
+  font-size: @size;
+  line-height: @height;
+}
+
+.reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pseudo(@content: ""; @pos: absolute) {
+  content: @content;
+  position: @pos;
+}
+
+.block-size(@width; @height) {
+  width: @width;
+  height: @height;
+}
+
+.flex() {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.padding-y (@top; @bottom) {
+  padding-top: @top;
+  padding-bottom: @bottom;
+}
