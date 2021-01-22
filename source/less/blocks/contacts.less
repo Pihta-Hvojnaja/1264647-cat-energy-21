@@ -1,15 +1,13 @@
 .contacts {
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr 1440px 1fr;
   }
 }
 
 .contacts__wrapper,
 .contacts__map {
   @media (min-width: @desktop-width) {
-    grid-column-start: 1;
-    grid-column-end: -1;
     grid-row-start: 1;
     grid-row-end: -1;
   }
@@ -31,6 +29,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: -2;
     z-index: 1;
     align-self: start;
     width: 570px;
@@ -96,6 +96,11 @@
 
   @media (min-width: @tablet-width) {
     min-height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
   }
 }
 
