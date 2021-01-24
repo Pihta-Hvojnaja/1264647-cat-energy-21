@@ -1,0 +1,140 @@
+.card {
+  .flex();
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 400px;
+  .padding-y(19px; 24px);
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    padding-top: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 19px;
+  }
+}
+
+.card__img {
+  width: 140px;
+  height: 112px;
+
+  @media (min-width: @tablet-width) {
+    width: 168px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 172px;
+    margin-bottom: 41px;
+  }
+}
+
+.card__img--big {
+  height: 196px;
+}
+
+.card__wrapper {
+  padding-top: 2px;
+  flex-grow: 1;
+  max-width: 50%;
+
+  @media (min-width: @tablet-width) {
+    max-width: none;
+    width: 100%;
+  }
+}
+
+.card__title {
+  width: 70%;
+  margin: 0 0 13px;
+  font-family: @font-family-title;
+  font-weight: 400;
+  .text(16px; 20px);
+  text-transform: uppercase;
+  color: @black-special-lighter;
+
+  @media (min-width: @tablet-width) {
+    width: 65%;
+    margin: 0 auto 12px;
+    padding-left: 1px;
+    .text(20px; 24px);
+    text-align: center;
+
+    span {
+      margin-left: 5px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    margin-bottom: 17px;
+    line-height: 21px;
+  }
+}
+
+.card__description {
+  margin: 0;
+  .text(12px; 16px);
+  color: @dark-grey-text;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.card__item {
+  .flex();
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2px;
+
+  &:not(:first-child) {
+    margin-right: -3px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 9px 2px 6px 0;
+    border-bottom: @border-example;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 4px;
+
+    &:first-child {
+      padding-right: 3px;
+    }
+  }
+}
+
+.card__term {
+  max-width: 50%;
+  padding-right: 10px;
+}
+
+.card__definition {
+  margin: 0;
+  max-width: 50%;
+}
+
+.card__link-ordering {
+  width: 100%;
+  margin-top: 13px;
+  padding: 12px 20px 10px 20px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 10px;
+  }
+}

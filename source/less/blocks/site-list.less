@@ -50,7 +50,6 @@
 
   @media (min-width: @desktop-width) {
     padding: 16px 0 6px 0;
-    color: @white;
   }
 }
 
@@ -58,8 +57,18 @@
   @media (min-width: @tablet-width) {
     border-bottom: @border-current-tablet;
   }
+}
 
-  @media (min-width: @desktop-width) {
-    border-bottom: @border-current-desktop;
+.site-list--index {
+  .site-list__link {
+    @media (min-width: @desktop-width) {
+      color: @white;
+    }
+  }
+
+  .site-list__link--current {
+    @media (min-width: @desktop-width) {
+      border-bottom: @border-current-desktop;
+    }
   }
 }
