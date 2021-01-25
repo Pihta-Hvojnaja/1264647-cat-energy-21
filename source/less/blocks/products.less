@@ -31,7 +31,7 @@
 
   @media (min-width: @tablet-width) {
     width: 324px;
-    margin-bottom: 44px;
+    margin-bottom: 44.5px;
     padding: 0 38px 16px 39px;
     background-image: linear-gradient(transparent 96px, @grey-background 96px);
   }
@@ -44,6 +44,17 @@
     width: 245px;
     margin-bottom: 0;
     background-image: linear-gradient(transparent 99px, @grey-background 99px);
+  }
+
+  &--all {
+    background: none;
+    border: @border-card-all;
+
+    @media (min-width: @tablet-width) {
+      align-self: flex-end;
+      min-height: 429px;
+      padding: 0 35px 10px 36px;
+    }
   }
 }
 

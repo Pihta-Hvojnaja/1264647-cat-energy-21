@@ -1,0 +1,49 @@
+.button {
+  font-family: @font-family-title;
+  font-weight: 400;
+  padding: 0;
+  color: @white;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: @green;
+
+  &:hover {
+    background-color: @green-hover;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+  }
+
+  @media (max-width: @tablet-width - 1px) {
+    width: 100%;
+  }
+}
+
+.button--ordering {
+  width: 100%;
+  margin-top: 13px;
+  padding: 12px 20px 10px 20px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 10px;
+  }
+}
+
+.button--ordering-all {
+  color: @dark-grey-text;
+  background-color: @grey-background;
+
+  &:hover {
+    background-color: @grey-background-button-all;
+  }
+
+  &:active {
+    color: fade(@dark-grey-text, 30%);
+  }
+}
