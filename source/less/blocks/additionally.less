@@ -1,0 +1,39 @@
+.additionally__list {
+  .reset-list();
+}
+
+.additionally__item {
+  .flex();
+}
+
+.additionally__title,
+.additionally__name {
+  margin: 0;
+  font-family: @font-family-title;
+  font-weight: 400;
+}
+
+.additionally__title {
+  .text(24px; 24px);
+
+  @media (min-width: @tablet-width) {
+    .text(36px; 36px);
+  }
+}
+
+.additionally__name {
+  .text(16px; 16px);
+  text-transform: uppercase;
+  color: @black-special-lighter;
+
+  @media (min-width: @tablet-width) {
+    .text(20px; 20px);
+  }
+}
+
+.additionally__quantity,
+.additionally__cost {
+  margin: 0;
+  line-height: 14px;
+  color: @dark-grey-text;
+}
